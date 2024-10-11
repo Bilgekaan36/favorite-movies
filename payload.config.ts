@@ -50,11 +50,10 @@ export default buildConfig({
     supportedLanguages: { en },
   },
   async onInit(payload) {
-    const existingUsers = await payload.find({
-      collection: 'users',
-      limit: 1,
-    })
-
+    // const existingUsers = await payload.find({
+    //   collection: 'users',
+    //   limit: 1,
+    // })
     // This is useful for local development
     // so you do not need to create a first-user every time
     // if (existingUsers.docs.length === 0) {
