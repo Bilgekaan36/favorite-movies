@@ -57,15 +57,15 @@ export default buildConfig({
 
     // This is useful for local development
     // so you do not need to create a first-user every time
-    if (existingUsers.docs.length === 0) {
-      await payload.create({
-        collection: 'users',
-        data: {
-          email: 'dev@payloadcms.com',
-          password: 'test',
-        },
-      })
-    }
+    // if (existingUsers.docs.length === 0) {
+    //   await payload.create({
+    //     collection: 'users',
+    //     data: {
+    //       email: 'dev@payloadcms.com',
+    //       password: 'test',
+    //     },
+    //   })
+    // }
   },
   // Sharp is now an optional dependency -
   // if you want to resize images, crop, set focal point, etc.
